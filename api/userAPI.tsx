@@ -1,5 +1,6 @@
 "use server";
 
+import { UserLogin } from "@/types";
 import axios from "axios";
 
 const API_URL = process.env.NEX_PUBLIC_API_URL;
@@ -12,5 +13,5 @@ const userAPI = axios.create({
 
 
 export const auth = async (user: UserLogin) =>{
-  
+
 }

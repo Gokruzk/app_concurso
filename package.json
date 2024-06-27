@@ -9,14 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-=======
     "@tanstack/react-query": "^5.48.0",
     "axios": "^1.7.2",
->>>>>>> 763319cf1a818475b10e7da38f630a215fbf5af8
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@types/node": "^20",

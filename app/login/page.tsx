@@ -29,26 +29,26 @@ function LoginForm() {
       username: username,
       password: password,
     };
-    addUserMutation.mutate({
-      ...user,
-    });
+    // addUserMutation.mutate({
+    //   ...user,
+    // });
   };
-  const addUserMutation = useMutation({
-    mutationFn: auth,
-    onSuccess: (data) => {
-      if (data.status === 200) {
-        alert("Login successfully");
-        // authUser(user);
-        router.push("/profile");
-      } else {
-        alert(`Authentication failed, ${data.error}`);
-      }
-    },
-    onError: (error) => {
-      console.log(error);
-      alert("An error occurred during authentication");
-    },
-  });
+  // const addUserMutation = useMutation({
+  //   mutationFn: auth,
+  //   onSuccess: (data) => {
+  //     if (data.status === 200) {
+  //       alert("Login successfully");
+  //       // authUser(user);
+  //       router.push("/profile");
+  //     } else {
+  //       alert(`Authentication failed, ${data.error}`);
+  //     }
+  //   },
+  //   onError: (error) => {
+  //     console.log(error);
+  //     alert("An error occurred during authentication");
+  //   },
+  // });
   function togglePasswordVisibility() {
     const passwordInput = document.getElementById(
       "password"
