@@ -1,22 +1,12 @@
 import { AxiosError } from "axios";
 
 export interface User {
-  cod_user: string;
-  cod_ubi: string;
-  username: string;
-  email: string;
-  password: string;
-  birth_date: string;
-}
-
-export interface User_ {
-  cod_user: string;
-  cod_ubi: number;
-  country?: string;
-  username: string;
-  email: string;
-  password: string;
-  birth_date: string;
+  id_usuario: string;
+  nombre: string;
+  apellido: string;
+  correo: string;
+  contrasena: string;
+  celular: string;
 }
 
 export interface LinkButtonProps {
@@ -51,8 +41,8 @@ export interface UserSt {
 }
 
 export interface UserState {
-  user: User_ | null;
-  authUser: (user: User_) => void;
+  user: User | null;
+  authUser: (user: User) => void;
   removeSession: () => void;
 }
 
